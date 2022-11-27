@@ -3,7 +3,7 @@ import Router from "../roots/Router";
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "../css/index.css";
-// import logoImg from "../images/TrollFace.svg"
+import logoImg from "../images/TrollFace.svg"
 
 const Header = () => {
     let navigate = useNavigate();
@@ -13,7 +13,7 @@ const Header = () => {
         <header className="header">
             <div className="header__content">
                 <div className="logo" onClick={() => navigate(Router.MAIN)}>
-                    <img src="./images/TrollFace.svg" alt=""></img>
+                    <img src={logoImg} alt=""></img>
                     <span>Meme Generator</span>
                 </div>
 
